@@ -1,3 +1,10 @@
+:root {
+  --gray-bg-color: #F8F8F8;
+  --dark-gray-bg-color: #13171C;
+  --white-color: #FFF;
+  --orange: #FF5017;
+}
+
 /* #region General rules */
 html {
   box-sizing: border-box;
@@ -66,7 +73,7 @@ body {
 
 .menu__btn span {
   width: 100%;
-  background-color: #FF5017;
+  background-color: var(--orange);
   height: 3px;
 }
 
@@ -94,7 +101,7 @@ body {
   align-self: flex-end;
   padding-right: 75px;
   padding-bottom: 50px;
-  background: linear-gradient(90deg, #FF5017 0%, #000000 100%);
+  background: linear-gradient(90deg, var(--orange), #000000 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -180,3 +187,118 @@ body {
 }
 
 /* #endregion Second screen */
+
+/* #region Third screen */
+
+.color{
+  background-color: var(--gray-bg-color);
+}
+
+.color__text{
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 160px;
+  margin-bottom: 70px;
+}
+
+.color__gallery{
+  background-color: var(--dark-gray-bg-color);
+}
+
+.color__gallery-start,
+.color__gallery-end{
+  width: 100%;
+  margin: 0 auto;
+}
+.gallery-box{
+  padding: 170px 50px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  text-align: center;
+}
+.gallery-box img {
+  max-width: 100%;
+  border-radius: 20px;
+}
+
+.gallery-box__text{
+  font-size: 36px;
+  color: var(--white-color);
+}
+
+/* #endregion Third screen */
+
+/* #region Fourth screen */
+
+.contacts{
+  padding: 170px 0 100px;
+  background-color: var(--dark-gray-bg-color);
+}
+
+.contacts__title{
+  text-align: center;
+  margin-bottom: 70px;
+  text-transform: uppercase;
+  font-size: 36px;
+  color: var(--orange);
+}
+
+.contacts__box{
+  display: flex;
+  justify-content: space-between;
+  gap: 40px 200px;
+  padding-left: 300px;
+  padding-right: 150px;
+}
+
+.contacts__info{
+  max-width: 565px;
+  
+}
+
+.contacts__headtext {
+  color: #BCBCBC;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.contacts__text,
+.contacts__text-rules,
+.phone{
+  color: var(--white-color);
+}
+.contacts__text{
+  padding-top: 10px;
+  margin-bottom: 20px;
+  max-width: 477px;
+}
+.contacts__text-rules{
+  padding-top: 77px;
+  font-size: 14px;
+  max-width: 330px;
+}
+
+.form__input{
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+/* #endregion Fourth screen */
+
+/* #region Footer screen */
+
+.footer{
+  text-align: center;
+  padding: 15px 0 90px;
+  font-size: 14px;
+  color: var(--white-color);
+  background-color: var(--dark-gray-bg-color);
+}
+
+/* #endregion Footer screen */
+
+
+
